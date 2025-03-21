@@ -34,4 +34,9 @@
   
   const mutationObserver = new MutationObserver(observeElements);
   mutationObserver.observe(document.body, { childList: true, subtree: true });
+
+  window.onload = function() {
+  observeElements();
+};
+
 })();
