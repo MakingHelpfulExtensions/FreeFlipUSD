@@ -16,7 +16,7 @@
           textNodes.forEach(node => {
             const value = parseFloat(node.textContent.replace(/,/g, '').trim());
             if (!isNaN(value)) {
-              node.textContent = (value * 3).toFixed(2);
+              node.textContent = ((value + 1)* 3).toFixed(2);
             }
           });
         }
